@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane hbarPolicy="NEVER" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="unity.gui.HomeDashboardController">
+   <content>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" styleClass="content-page" stylesheets="@../style/backcss.css">
+         <children>
+            <HBox prefHeight="85.0" prefWidth="1015.0" styleClass="header-title">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="504.0">
+                     <children>
+                        <Button mnemonicParsing="false" styleClass="title-button">
+                           <graphic>
+                              <FontAwesomeIcon glyphName="CUBE" styleClass="title-button-icon" />
+                           </graphic>
+                        </Button>
+                        <Label prefHeight="48.0" prefWidth="456.0" styleClass="title-label" text="Dashboard">
+                           <font>
+                              <Font name="Century Gothic" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="513.0" layoutY="10.0" prefHeight="100.0" prefWidth="523.0">
+                     <children>
+                        <Label prefHeight="48.0" prefWidth="522.0" styleClass="title-right" text="  /  Dashboard">
+                           <graphic>
+                              <FontAwesomeIcon glyphName="CUBE" />
+                           </graphic>
+                           <font>
+                              <Font name="Century Gothic" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="117.0" prefWidth="1015.0" styleClass="info-dashboard">
+               <children>
+                  <HBox layoutX="542.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0" styleClass="info-item">
+                     <children>
+                        <VBox prefHeight="67.0" prefWidth="158.0">
+                           <children>
+                              <Label prefHeight="17.0" prefWidth="165.0" text="REFUGIERS">
+                                 <font>
+                                    <Font name="Century Gothic" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="countRefugiers" prefHeight="51.0" prefWidth="158.0" text="250">
+                                 <font>
+                                    <Font name="Century Gothic" size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <Button mnemonicParsing="false" style="-fx-background-color: #ff5370;" styleClass="info-button">
+                           <graphic>
+                              <FontAwesomeIcon glyphName="TASKS" styleClass="info-dashboard-icon" />
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0" styleClass="info-item">
+                     <children>
+                        <VBox prefHeight="67.0" prefWidth="158.0">
+                           <children>
+                              <Label prefHeight="17.0" prefWidth="165.0" text="REFUGES">
+                                 <font>
+                                    <Font name="Century Gothic" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="countRef" prefHeight="51.0" prefWidth="158.0" text="250">
+                                 <font>
+                                    <Font name="Century Gothic" size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <Button mnemonicParsing="false" style="-fx-background-color: #2ed8b6;" styleClass="info-button">
+                           <graphic>
+                              <FontAwesomeIcon glyphName="HOME" styleClass="info-dashboard-icon" />
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="117.0" prefWidth="239.0" styleClass="info-item">
+                     <children>
+                        <VBox prefHeight="67.0" prefWidth="158.0" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="117.0" prefWidth="289.0" styleClass="info-item">
+                     <children>
+                        <VBox prefHeight="91.0" prefWidth="228.0">
+                           <children>
+                              <Button mnemonicParsing="false" onMouseClicked="#statAction" prefHeight="67.0" prefWidth="183.0" text="STATISTIQUE" textFill="#e47d34">
+                                 <font>
+                                    <Font name="Agency FB Bold" size="30.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </content>
+</ScrollPane>
